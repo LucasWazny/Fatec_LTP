@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  float e_termo_x, e_termo_independente, s_valor_x;
+
+
+  printf("Resolucao da eq. 1 grau: a.x + b = 0.\n");
+  printf("Entre como o termo vinculado em X [a]:\n");
+  scanf("%f", &e_termo_x);
+  if (e_termo_x != 0){
+    printf("Entre como o termo independente de X [b]:\n");
+    scanf("%f", &e_termo_independente);
+    s_valor_x = - e_termo_independente/e_termo_x;
+    printf("O valor de X: %.3f", s_valor_x);
+  }else{
+    printf("Erro: A=0.\n");
+  }
+ 
+  return 0;
+}
